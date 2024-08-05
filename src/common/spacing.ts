@@ -1,0 +1,17 @@
+export default {
+  spacing_0: 0,
+  spacing_0_5: 2,
+  spacing_1: 4,
+  spacing_2: 8,
+  spacing_3: 12,
+  spacing_4: 16,
+  spacing_5: 20,
+  spacing_6: 24,
+  spacing_7: 28,
+  spacing_8: 32,
+  spacing_9: 40,
+  spacing_10: 48,
+  spacing_15: 60,
+  spacing_20: 80,
+  spacing_25: 100,
+};
