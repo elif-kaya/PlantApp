@@ -44,17 +44,18 @@ export const getStyles = ({ textColor}: StyleProps) => {
       opacity: 0.5,
     },
     text: {
+      
       fontSize: font_size.font_16,
       textAlign: 'center',
       textDecorationLine: 'none',
-      textDecorationColor: textColor,
-      color: textColor ?? color.green,
+      textDecorationColor: color.lightGray
     },
     textPrimary: {
       color: color.white,
     },
     textTertiary: {
-      fontSize: font_size.font_14,
+      color: color.lightGray_70,
+      fontSize: 11,
       textDecorationLine: 'underline',
     },
     textTransparent: {

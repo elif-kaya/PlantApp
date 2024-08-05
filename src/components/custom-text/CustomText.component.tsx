@@ -9,6 +9,8 @@ interface CustomTextComponentProps {
   style?: StyleProp<TextStyle>;
   numberOfLines?: number;
   weight: '400'| '500' | '600' | '700' | '800';
+  boldTextArray?: Array<{ index: number; weight: '400' | '500' | '600' | '700' | '800' }>;
+
 }
 
 export const CustomTextComponent = ({
@@ -16,13 +18,27 @@ export const CustomTextComponent = ({
   style,
   numberOfLines,
   weight,
+  boldTextArray=[], 
+
 
 
 }: CustomTextComponentProps): React.JSX.Element => {
   const styles = getStyles(weight);
+  const text = typeof children === 'string' ? children : '';
+  const words =  text.split(' ');
+
   return (
     <Text style={[styles.text, style]} numberOfLines={numberOfLines}>
-      {children}
+     {words.map((word, index) => {
+        // Find the custom weight for the current word index
+        const customWeight = boldTextArray.find(item => item.index === index)?.weight || weight;
+
+        return (
+          <Text key={index} style={{ fontWeight: customWeight }}>
+            {word}{' '}
+          </Text>
+        );
+      })}
     </Text>
   );
 };

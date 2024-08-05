@@ -70,7 +70,7 @@ export const ButtonComponent = ({
                 variant === 'primary' && styles.textPrimary,
                 variant === 'tertiary' && styles.textTertiary
               ]}
-              weight='700'
+              weight={variant === 'tertiary' ? '400' : '700'}
             >
               {text}
             </CustomTextComponent>
