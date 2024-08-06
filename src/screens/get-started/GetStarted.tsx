@@ -9,7 +9,6 @@ import routeKeys from 'common/routeKeys';
 
 import {getStyles} from './GetStartedStyle';
 
-import {ScreenComponent, CustomImageComponent} from 'components';
 import {ButtonComponent} from 'components/button';
 import getStartedCover from 'assets/images/getStartedCover.png';
 import background from 'assets/images/Background.png';
