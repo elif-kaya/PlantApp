@@ -14,5 +14,30 @@ export default {
     guide: {
         guide_1_title: "Take a photo to identify the plant!",
         guide_2_title: "Get plant care guides"
+    },
+    payment_plan:{
+        title: "PlantApp Premium",
+        access_all: "Access All Features",
+        payment_types: {
+            unlimited: "Unlimited",
+            unlimited_desc: "Plant Identify",
+            faster: "Faster",
+            faster_desc: "Process",
+            detailed: "Detailed",
+            detailed_desc: "Plant Care",
+        },
+        plans:{
+            monthly: "1 Month",
+            monthly_desc: "$2.99/month, auto renewable",
+            yearly: "1 Year",
+            yearly_desc: "First 3 days free, then $529.99/year",
+            save_50: 'Save 50%'
+
+        },
+        try_free: "Try free for 3 days",
+        legal_info: "After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable",
+        terms_privacy_restore: "Terms  •  Privacy  •  Restore"
+
+
     }
 }

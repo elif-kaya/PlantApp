@@ -10,7 +10,7 @@ import routeKeys from 'common/routeKeys';
 import {getStyles} from './GetStartedStyle';
 
 import {ButtonComponent} from 'components/button';
-import getStartedCover from 'assets/images/getStartedCover.png';
+import getStartedCover from 'assets/images/get-started/getStartedCover.png';
 import background from 'assets/images/Background.png';
 import {CustomTextComponent} from 'components/custom-text';
 
@@ -59,7 +59,7 @@ const GetStarted = (): React.JSX.Element => {
             text={t('get_started.terms_of_use')}
             onPress={() => {}}
           />
-          <CustomTextComponent style={styles.agreePolicies} weight={'400'}>
+          <CustomTextComponent style={styles.agreePoliciesButtons} weight={'400'}>
             {t('get_started.and')}
           </CustomTextComponent>
           <ButtonComponent
@@ -67,7 +67,7 @@ const GetStarted = (): React.JSX.Element => {
             text={t('get_started.privacy_policy')}
             onPress={() => {}}
           />
-          <CustomTextComponent style={styles.agreePolicies} weight={'400'}>
+          <CustomTextComponent style={styles.agreePoliciesButtons} weight={'400'}>
             {t('dot')}
           </CustomTextComponent>
         </View>

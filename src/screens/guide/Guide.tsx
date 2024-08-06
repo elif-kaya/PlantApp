@@ -21,7 +21,12 @@ import guide2 from 'assets/images/guide/guide2.png';
 const Guide = (): React.JSX.Element => {
   const {t} = useTranslation();
   const styles = getStyles();
+  const navigation = useNavigation();
   const boldTextArrayGuide1 = [{index: 2, weight: '800'},{index: 3, weight: '800'}];
+
+  const handleContinueClick = (): void =>
+  navigation.dispatch(rootNavigation.navigate(routeKeys.premium));
+
 
   return (
     <SafeAreaView style={styles.container}>
@@ -54,7 +59,7 @@ const Guide = (): React.JSX.Element => {
             <ButtonComponent
               variant="primary"
               text={t('continue')}
-              onPress={() => {}}
+              onPress={handleContinueClick}
             />
           </View>
     </SafeAreaView>

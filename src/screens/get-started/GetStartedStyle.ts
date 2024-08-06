@@ -48,6 +48,11 @@ export const getStyles = () => {
     bottom: 0, flexDirection: 'row', width: '18%', justifyContent: 'center'},
     agreePolicies:{
       color: color.lightGray_70,
+      fontSize: 11,
+      marginBottom: 10
+    },
+    agreePoliciesButtons:{
+      color: color.lightGray_70,
       fontSize: 11
     }
   });
