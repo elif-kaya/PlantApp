@@ -13,12 +13,12 @@ interface StyleProps {
 export const getStyles = ({ textColor}: StyleProps) => {
   return StyleSheet.create({
     buttonContainer: {
-      height: spacing.spacing_10,
+      height: spacing.spacing_11,
       width: '100%',
     },
     innerContainerPrimary: {
       flex: 1,
-      height: spacing.spacing_10,
+      height: spacing.spacing_11,
       borderRadius: borderRadius.borderRadius_12,
       borderWidth: 0,
       borderColor: color.white,

@@ -11,6 +11,7 @@ export default {
   spacing_8: 32,
   spacing_9: 40,
   spacing_10: 48,
+  spacing_11: 56,
   spacing_15: 60,
   spacing_20: 80,
   spacing_25: 100,

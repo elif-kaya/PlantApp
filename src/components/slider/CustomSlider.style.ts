@@ -8,27 +8,37 @@ export const getStyles = () => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
       alignItems: 'center',
       width: '100%',
+      height: '100%'
     },
     slide: {
       width: '100%',
-      justifyContent: 'center',
-      alignItems: 'center',
+      height: '100%',
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
     },
     dotsContainer: {
+      position: 'absolute',
+      bottom: -40,
       flexDirection: 'row',
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 10,
+
     },
     dot: {
-      width: 10,
-      height: 10,
+      width: 6,
+      height: 6,
       borderRadius: 5,
-      backgroundColor: '#1EB1FC',
+      backgroundColor: color.darkGray,
       marginHorizontal: 5,
+      opacity: 0.25
     },
+    activeDot:{
+      opacity: 1,
+      width: 10,
+      height: 10
+    }
   });
 };

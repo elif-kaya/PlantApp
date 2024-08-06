@@ -11,39 +11,52 @@ import {getStyles} from './GuideStyle';
 
 import {ScreenComponent, CustomImageComponent} from 'components';
 import {ButtonComponent} from 'components/button';
-import background from 'assets/images/Background.png';
+import brush from 'assets/images/guide/brush.png';
 import {CustomTextComponent} from 'components/custom-text';
 import {CustomSliderComponent} from 'components/slider';
 import guide1 from 'assets/images/guide/guide1.png';
+import guide2 from 'assets/images/guide/guide2.png';
+
 
 const Guide = (): React.JSX.Element => {
   const {t} = useTranslation();
   const styles = getStyles();
+  const boldTextArrayGuide1 = [{index: 2, weight: '800'},{index: 3, weight: '800'}];
 
   return (
     <SafeAreaView style={styles.container}>
-        <CustomSliderComponent>
-          <View style={styles.slide}>
-
-            <Image  style={styles.image} source={guide1}></Image>
-
+      <CustomSliderComponent>
+        <View style={styles.slide}>
+          <CustomTextComponent
+            style={styles.title}
+            boldTextArray={boldTextArrayGuide1}
+            weight={'500'}>
+            {t('guide.guide_1_title')}
+          </CustomTextComponent>
+          <Image style={styles.imageBrushGuide1} source={brush}></Image>
+          <Image style={styles.image} source={guide1}></Image>
+          
+        </View>
+        <View style={styles.slide}>
+        <CustomTextComponent
+            style={styles.title}
+            boldTextArray={boldTextArrayGuide1}
+            weight={'500'}>
+            {t('guide.guide_2_title')}
+          </CustomTextComponent>
+          <Image style={styles.imageBrushGuide2} source={brush}></Image>
+          <Image style={styles.image} source={guide2}></Image>
+          
+      
+        </View>
+      </CustomSliderComponent>
+      <View style={styles.buttonContainer}>
+            <ButtonComponent
+              variant="primary"
+              text={t('continue')}
+              onPress={() => {}}
+            />
           </View>
-          <View style={styles.slide}>
-            <CustomTextComponent style={styles.text} weight={'400'}>
-              Slide 2
-            </CustomTextComponent>
-          </View>
-          <View style={styles.slide}>
-            <CustomTextComponent style={styles.text} weight={'400'}>
-              Slide 3
-            </CustomTextComponent>
-          </View>
-          <View style={styles.slide}>
-            <CustomTextComponent style={styles.text} weight={'400'}>
-              Slide 1
-            </CustomTextComponent>
-          </View>
-        </CustomSliderComponent>
     </SafeAreaView>
   );
 };

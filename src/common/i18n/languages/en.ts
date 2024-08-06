@@ -1,5 +1,6 @@
 export default {
     dot: '.',
+    continue: 'Continue',
     
     get_started:{
         title: 'Welcome to PlantApp',
@@ -9,5 +10,9 @@ export default {
         terms_of_use: 'Terms of Use',
         and: ' & ',
         privacy_policy: 'Privacy Policy'
+    },
+    guide: {
+        guide_1_title: "Take a photo to identify the plant!",
+        guide_2_title: "Get plant care guides"
     }
 }

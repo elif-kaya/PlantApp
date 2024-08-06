@@ -32,9 +32,8 @@ export const CustomSliderComponent = ({children}) => {
         {React.Children.map(children, (_, index) => (
           <View
             key={index}
-            style={[
-              styles.dot,
-              { opacity: index === activeIndex ? 1 : 0.3 },
+            style={[styles.dot, 
+              index === activeIndex && styles.activeDot,
             ]}
           />
         ))}
