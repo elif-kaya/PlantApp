@@ -37,19 +37,20 @@ export default {
     legal_info:
       'After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable',
     terms_privacy_restore: 'Terms  •  Privacy  •  Restore',
-    home: {
-      greeting: 'Hi, plant lover!',
-      good_afternoon: 'Good Afternoon! ⛅',
-      search: 'Search for plants',
-      free_premium: 'FREE Premium Available',
-      tap_to_upgrade: 'Tap to upgrade your account!',
-      get_started: 'Get Started',
-    },
-    navbar: {
-      home: 'Home',
-      diagnose: 'Diagnose',
-      my_garden: 'My Garden',
-      profile: 'Profile',
-    },
+    
+  },
+  home: {
+    greeting: 'Hi, plant lover!',
+    good_afternoon: 'Good Afternoon! ⛅',
+    search: 'Search for plants',
+    free_premium: 'FREE Premium Available',
+    tap_to_upgrade: 'Tap to upgrade your account!',
+    get_started: 'Get Started',
+  },
+  navbar: {
+    home: 'Home',
+    diagnose: 'Diagnose',
+    my_garden: 'My Garden',
+    profile: 'Profile',
   },
 };

@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 import color from 'common/color';
 import spacing from 'common/spacing';
-import { borderNumeric } from 'common/border';
+import border from 'common/border';
 import font_size from 'common/font_size';
 import borderRadius from 'common/borderRadius';
 
@@ -20,7 +20,7 @@ export const getStyles = ({ textColor}: StyleProps) => {
       flex: 1,
       height: spacing.spacing_11,
       borderRadius: borderRadius.borderRadius_12,
-      borderWidth: 0,
+      borderWidth: border.border_0,
       borderColor: color.white,
       backgroundColor: color.green,
       display: 'flex',
@@ -32,7 +32,7 @@ export const getStyles = ({ textColor}: StyleProps) => {
       flex: 1,
       height: spacing.spacing_10,
       borderRadius: borderRadius.borderRadius_12,
-      borderWidth: borderNumeric.border_2,
+      borderWidth: border.border_2,
       borderColor: color.green,
       backgroundColor: color.white,
       display: 'flex',
@@ -55,7 +55,7 @@ export const getStyles = ({ textColor}: StyleProps) => {
     },
     textTertiary: {
       color: color.lightGray_70,
-      fontSize: 11,
+      fontSize: font_size.font_11,
       textDecorationLine: 'underline',
     },
     textTransparent: {

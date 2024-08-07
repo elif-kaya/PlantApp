@@ -1,4 +1,5 @@
 import color from 'common/color';
+import font_size from 'common/font_size';
 import spacing from 'common/spacing';
 import { StyleSheet } from 'react-native';
 
@@ -7,13 +8,13 @@ export const getStyles = () => {
     header: {alignContent: 'flex-start'},
     title:{
       color: color.darkGray,
-      fontSize: 28,
+      fontSize: font_size.font_28,
       textAlign: 'left',
       lineHeight: 40
     },
     info:{
       color: color.darkGray_70,
-      fontSize: 16,
+      fontSize: font_size.font_16,
       textAlign: 'left',
       lineHeight: 22,
       letterSpacing: 0.07
@@ -48,12 +49,12 @@ export const getStyles = () => {
     bottom: 0, flexDirection: 'row', width: '18%', justifyContent: 'center'},
     agreePolicies:{
       color: color.lightGray_70,
-      fontSize: 11,
+      fontSize: font_size.font_11,
       marginBottom: 10
     },
     agreePoliciesButtons:{
       color: color.lightGray_70,
-      fontSize: 11
+      fontSize: font_size.font_11
     }
   });
 };

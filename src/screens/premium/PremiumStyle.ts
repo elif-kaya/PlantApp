@@ -1,4 +1,5 @@
 import color from 'common/color';
+import font_size from 'common/font_size';
 import spacing from 'common/spacing';
 import {StyleSheet} from 'react-native';
 
@@ -15,30 +16,30 @@ export const getStyles = () => {
     },
     title: {
       color: color.white,
-      fontSize: 30,
+      fontSize: font_size.font_30,
     },
     description: {
       color: color.white_70,
-      fontSize: 17,
-      paddingVertical: 12,
+      fontSize: font_size.font_17,
+      paddingVertical: spacing.spacing_3,
     },
     container: {
       top: 320,
       left: '5%',
     },
     slide: {
-      padding: 16,
+      padding: spacing.spacing_4,
       width: 156,
       height: 130,
       borderRadius: 14,
       backgroundColor: color.white_8,
       justifyContent: 'flex-start',
       alignItems: 'flex-start',
-      marginRight: 10,
+      marginRight: spacing.spacing_010,
     },
     scrollContainer: {
       flexDirection: 'row', // Ensure horizontal layout
-      marginVertical: 20, // Margin around the container
+      marginVertical: spacing.spacing_5, // Margin around the container
     },
     iconContainer: {
       width: 36,
@@ -48,13 +49,13 @@ export const getStyles = () => {
       backgroundColor: color.black_24,
     },
     sliderTitleText: {
-      fontSize: 20,
+      fontSize: font_size.font_20,
       lineHeight: 24,
       letterSpacing: 0.38,
       color: color.white,
     },
     sliderDescriptionText: {
-      fontSize: 13,
+      fontSize: font_size.font_13,
       lineHeight: 24,
       letterSpacing: -0.08,
       color: color.white_70,
@@ -93,12 +94,12 @@ export const getStyles = () => {
       backgroundColor: color.white,
     },
     optionText: {
-      fontSize: 16,
+      fontSize: font_size.font_16,
       lineHeight: 18.96,
       color: color.white,
     },
     optionDescription: {
-      fontSize: 12,
+      fontSize: font_size.font_12,
       lineHeight: 14.22,
       color: color.white_70,
     },
@@ -115,7 +116,7 @@ export const getStyles = () => {
       color: color.white,
       padding: 6,
       paddingLeft: 10,
-      fontSize:12 
+      fontSize:font_size.font_12 
     },
     buttonContainer:{
       width: '90%',
@@ -123,13 +124,13 @@ export const getStyles = () => {
     },
     legal:{
       color: color.white_52,
-      fontSize: 9,
+      fontSize: font_size.font_9,
       marginBottom: 10,
       width:  '90%',
     },
     termsPrivacyRestore:{
       color: color.white_50,
-      fontSize: 11,
+      fontSize: font_size.font_11,
       marginBottom: 10,
       width:  '90%',
       textAlign: 'center'

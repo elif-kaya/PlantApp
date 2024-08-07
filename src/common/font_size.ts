@@ -1,10 +1,16 @@
 export default {
+  font_9: 9,
+  font_11: 11,
   font_12: 12,
+  font_13: 13,
   font_14: 14,
   font_16: 16,
+  font_17: 17,
   font_18: 18,
   font_20: 20,
+  font_22: 22,
   font_24: 24,
   font_28: 28,
+  font_30: 30,
   font_32: 32,
 };

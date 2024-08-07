@@ -1,33 +1,41 @@
-import React, {useEffect, useState} from 'react';
-import {
-  SafeAreaView,
-  View,
-  Image,
-  ImageBackground,
-  FlatList,
-  TouchableOpacity,
+// React and Hooks
+import React, { useState } from 'react';
+
+// React Native Components
+import { 
+  View, 
+  Image, 
+  ImageBackground, 
+  FlatList, 
+  TouchableOpacity, 
+  ScrollView 
 } from 'react-native';
-import {useTranslation} from 'react-i18next';
-import {useNavigation} from '@react-navigation/native';
 
-import {rootNavigation} from 'routes/RootNavigation';
+// Third-Party Libraries
+import { useTranslation } from 'react-i18next';
+import { useNavigation } from '@react-navigation/native';
 
+// Navigation
+import { rootNavigation } from 'routes/RootNavigation';
 import routeKeys from 'common/routeKeys';
 
-import {getStyles} from './PremiumStyle';
+// Local Styles
+import { getStyles } from './PremiumStyle';
+
+// Assets
 import background from 'assets/images/premium/Image.png';
 import icon from 'assets/icons/Icon.png';
-import color from 'common/color';
-import {CustomTextComponent} from 'components/custom-text';
-import {CustomSliderComponent} from 'components/slider';
-import {ScrollView} from 'react-native';
-import {ButtonComponent} from 'components/button';
+
+// Custom Components
+import { CustomTextComponent, WeightType } from 'components/custom-text';
+import { ButtonComponent } from 'components/button';
+
 
 const Premium = (): React.JSX.Element => {
   const {t} = useTranslation();
   const styles = getStyles();
   const navigation = useNavigation();
-  const boldTextArray = [{index: 0, weight: '800'}];
+  const boldTextArray = [{index: 0, weight: '800' as WeightType}];
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleTryClick = (): void => {

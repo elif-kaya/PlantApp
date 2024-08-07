@@ -4,12 +4,14 @@ import { Text, StyleProp, TextStyle } from 'react-native';
 
 import { getStyles } from './CustomText.style';
 
+export type WeightType = "300" | "400" | "500" | "600" | "700"| "800";
+
 interface CustomTextComponentProps {
   children: React.ReactNode;
   style?: StyleProp<TextStyle>;
   numberOfLines?: number;
-  weight: '300' | '400'| '500' | '600' | '700' | '800';
-  boldTextArray?: Array<{ index: number; weight: '400' | '500' | '600' | '700' | '800' }>;
+  weight: WeightType;
+  boldTextArray?: Array<{ index: number; weight: WeightType }>;
 
 }
 

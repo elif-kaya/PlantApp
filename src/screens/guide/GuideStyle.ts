@@ -1,4 +1,5 @@
 import color from 'common/color';
+import font_size from 'common/font_size';
 import spacing from 'common/spacing';
 import {StyleSheet} from 'react-native';
 
@@ -16,7 +17,7 @@ export const getStyles = () => {
       alignItems: 'flex-start',
     },
     text: {
-      fontSize: 24,
+      fontSize: font_size.font_24,
       color: '#fff',
     },
     image: {
@@ -25,22 +26,22 @@ export const getStyles = () => {
     },
     imageBrushGuide1:{
         position: 'absolute',
-        right: 85,
-        top: 55,
+        right: spacing.spacing_085,
+        top: spacing.spacing_055,
     },
     imageBrushGuide2:{
         position: 'absolute',
-        right: 125,
-        top: 55,
+        right: spacing.spacing_125,
+        top: spacing.spacing_055,
         width: '38%'
     },
     title: {
       color: color.darkGray,
-      fontSize: 28,
-      top: 24,
-      left: 24,
+      fontSize: font_size.font_28,
+      top: spacing.spacing_6,
+      left: spacing.spacing_6,
       textAlign: 'left',
-      lineHeight: 40,
+      lineHeight: spacing.spacing_9,
       width: '70%',
     },
     buttonContainer: {
