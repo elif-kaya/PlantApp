@@ -57,7 +57,9 @@ const Home = (): React.JSX.Element => {
     }
   }, [questionsResponse, categoriesResponse]);
 
-  return <View></View>;
+  return <View>
+    
+  </View>;
 };
 
 export default Home;
