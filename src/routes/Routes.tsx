@@ -8,11 +8,13 @@ import GuideContainer from 'screens/guide/GuideContainer';
 
 import {enableScreens} from 'react-native-screens';
 import PremiumContainer from 'screens/premium/PremiumContainer';
+import HomeContainer from 'screens/home/HomeContainer';
 
 export type RootStackParamList = {
   getStarted: undefined;
   guide: undefined;
   premium: undefined;
+  home: undefined;
 };
 
 enableScreens();
@@ -37,6 +39,13 @@ const Routes = (): React.JSX.Element => (
     <Stack.Screen
       name={routeKeys.premium}
       component={PremiumContainer}
+      options={{
+        headerShown: false,
+      }}
+    />
+    <Stack.Screen
+      name={routeKeys.home}
+      component={HomeContainer}
       options={{
         headerShown: false,
       }}

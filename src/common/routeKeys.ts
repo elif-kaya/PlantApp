@@ -4,12 +4,14 @@ type RouteKeys ={
     getStarted: 'getStarted';
     guide: 'guide';
     premium: 'premium';
+    home: 'home';
 }
 
 const routeKeys : RouteKeys= {
     getStarted: 'getStarted',
     guide: 'guide',
-    premium: 'premium'
+    premium: 'premium',
+    home: 'home'
   };
   
 export default routeKeys;

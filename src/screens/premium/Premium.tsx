@@ -26,8 +26,13 @@ import {ButtonComponent} from 'components/button';
 const Premium = (): React.JSX.Element => {
   const {t} = useTranslation();
   const styles = getStyles();
+  const navigation = useNavigation();
   const boldTextArray = [{index: 0, weight: '800'}];
   const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleTryClick = (): void => {
+    navigation.dispatch(rootNavigation.navigate(routeKeys.home))
+  }
 
   const renderItemRadio = ({item}) => (
     <TouchableOpacity
@@ -144,7 +149,7 @@ const Premium = (): React.JSX.Element => {
           <ButtonComponent
             variant="primary"
             text={t('payment_plan.try_free')}
-            onPress={() => {}}
+            onPress={handleTryClick}
           />
         </View>
         <CustomTextComponent style={styles.legal} weight={'400'}>
